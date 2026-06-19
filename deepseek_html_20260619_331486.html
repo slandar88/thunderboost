@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>WoW Boost Pro – Classic & TBC Boosting</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0b0e14;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            color: #e8edf5;
+            padding: 2rem 1rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            background: #151e28;
+            border-radius: 32px;
+            padding: 2.5rem 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+            border: 1px solid #2a3a4a;
+        }
+
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #f7d875, #f0b34b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.25rem;
+        }
+
+        .subhead {
+            color: #a1b9d0;
+            font-size: 1.1rem;
+            border-left: 4px solid #f0b34b;
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-bar {
+            background: #1f2c3a;
+            border-radius: 60px;
+            padding: 0.8rem 1.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            border: 1px solid #2f4052;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .contact-item strong {
+            color: #f0c27b;
+        }
+
+        .badge {
+            background: #2f4052;
+            padding: 0.2rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #d4e0ed;
+        }
+
+        .grid-services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.8rem;
+            margin: 2rem 0 2.5rem;
+        }
+
+        .service-card {
+            background: #1f2c3a;
+            border-radius: 24px;
+            padding: 1.8rem 1.2rem;
+            border: 1px solid #2b3e50;
+            transition: 0.2s ease-in-out;
+        }
+
+        .service-card:hover {
+            border-color: #f0b34b;
+            background: #233340;
+            transform: translateY(-3px);
+        }
+
+        .service-card h3 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #f0c27b;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-card li {
+            padding: 0.3rem 0;
+            border-bottom: 1px solid #2a3a48;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .service-card li::before {
+            content: "⚡";
+            font-size: 0.9rem;
+            color: #f0b34b;
+        }
+
+        .pricing-table {
+            background: #1a2532;
+            border-radius: 24px;
+            padding: 1.5rem 1.8rem;
+            margin: 2rem 0;
+            border: 1px solid #2d4052;
+        }
+
+        .pricing-table h2 {
+            color: #f0c27b;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .pricing-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #293b4a;
+        }
+
+        .pricing-row:last-child {
+            border-bottom: none;
+        }
+
+        .pricing-row .service {
+            font-weight: 500;
+        }
+
+        .pricing-row .price {
+            color: #f7d875;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .note {
+            font-size: 0.95rem;
+            color: #b0c7dd;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+
+        .why-box {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px,1fr));
+            gap: 1.2rem;
+            background: #12202b;
+            border-radius: 24px;
+            padding: 1.8rem 1.8rem;
+            margin: 2rem 0;
+            border: 1px solid #2a3d4f;
+        }
+
+        .why-box div {
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-weight: 500;
+        }
+
+        .why-box span {
+            font-size: 1.6rem;
+        }
+
+        .footer-contact {
+            background: #1f2c3a;
+            border-radius: 40px;
+            padding: 1.8rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2.5rem;
+            border: 1px solid #314556;
+        }
+
+        .footer-contact div {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-contact strong {
+            color: #f0c27b;
+        }
+
+        .disclaimer {
+            font-size: 0.75rem;
+            color: #7a94ae;
+            margin-top: 2rem;
+            text-align: center;
+            border-top: 1px solid #253644;
+            padding-top: 1.5rem;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 1.5rem 1rem; }
+            h1 { font-size: 2rem; }
+            .contact-bar { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+            .footer-contact { flex-direction: column; align-items: flex-start; gap: 1rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <!-- Encabezado -->
+    <h1>⚔️ WoW Boost Pro</h1>
+    <div class="subhead">Professional boosting for WoW Classic · TBC · Private Servers</div>
+
+    <!-- Contacto rápido -->
+    <div class="contact-bar">
+        <span class="contact-item"><strong>Discord:</strong> slandar66</span>
+        <span class="contact-item"><strong>Email:</strong> slandar88@gmail.com</span>
+        <span class="badge">🟢 Online 24/7</span>
+    </div>
+
+    <!-- Servicios -->
+    <h2 style="color:#f0c27b; font-weight:600; font-size:1.8rem; margin:0 0 0.2rem 0;">🔥 Our Services</h2>
+    <div class="grid-services">
+
+        <div class="service-card">
+            <h3>WoW Classic</h3>
+            <ul>
+                <li>Leveling 1–60</li>
+                <li>Dungeon boosts</li>
+                <li>Attunement chains</li>
+                <li>Reputation grinding</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>TBC Classic</h3>
+            <ul>
+                <li>Leveling 58–70</li>
+                <li>Karazhan attunement</li>
+                <li>Profession leveling</li>
+                <li>Flying mount unlock</li>
+                <li>Honor farming</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Kronos (Vanilla)</h3>
+            <ul>
+                <li>Leveling 1–60</li>
+                <li>Dungeon / raid help</li>
+                <li>Profession leveling</li>
+                <li>Reputation</li>
+            </ul>
+        </div>
+
+        <div class="service-card">
+            <h3>Kapybara</h3>
+            <ul>
+                <li>Custom boosting</li>
+                <li>Leveling services</li>
+                <li>Reputation grinding</li>
+                <li>Flexible requests</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Precios -->
+    <div class="pricing-table">
+        <h2>💰 Pricing Guide</h2>
+        <div class="pricing-row"><span class="service">WoW Classic 1–60</span><span class="price">$135</span></div>
+        <div class="pricing-row"><span class="service">TBC 58–70</span><span class="price">$125</span></div>
+        <div class="pricing-row"><span class="service">TBC 58–70 + Karazhan attunement</span><span class="price">$165</span></div>
+        <div class="pricing-row"><span class="service">Honor farming (TBC)</span><span class="price">$1 / 1k honor</span></div>
+        <div class="note">📩 Contact us for custom requests &amp; private server pricing</div>
+    </div>
+
+    <!-- Razones -->
+    <div class="why-box">
+        <div><span>🛡️</span> 1 booster per account</div>
+        <div><span>🤖</span> No bots — 100% hand leveling</div>
+        <div><span>🧠</span> Experienced team</div>
+        <div><span>💳</span> PayPal · BTC · Western Union</div>
+    </div>
+
+    <!-- Footer contacto -->
+    <div class="footer-contact">
+        <div>
+            <span>📱 <strong>Discord:</strong> slandar66</span>
+            <span>✉️ <strong>Email:</strong> slandar88@gmail.com</span>
+        </div>
+        <span style="color:#b0c7dd;">⏳ Response &lt; 24h</span>
+    </div>
+
+    <div class="disclaimer">
+        ⚠️ All services are performed manually. We do not use bots, cheats, or hacking programs.
+    </div>
+
+</div>
+</body>
+</html>
